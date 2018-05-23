@@ -8,7 +8,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ObjectiveDbProject" />
         <module name="pl.gross.wat.sbd.objectiveDb" />
+        <module name="SBD_ObjectDbProject" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="SBD_ObjectDbProject" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
