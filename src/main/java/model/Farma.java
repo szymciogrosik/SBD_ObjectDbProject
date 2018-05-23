@@ -5,9 +5,7 @@ import model.osoba.Pracownik;
 import model.osoba.Wlasciciel;
 import model.zwierze.Zwierze;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.LinkedList;
 

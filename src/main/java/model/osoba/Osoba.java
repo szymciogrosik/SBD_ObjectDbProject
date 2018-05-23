@@ -2,9 +2,7 @@ package model.osoba;
 
 import model.dataType.Adres;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
@@ -16,6 +14,7 @@ public abstract class Osoba implements Serializable {
     private String imie;
     private String nazwisko;
     private String nrTelefonu;
+
     private Adres adres;
 
     public void przedstawSie() {
