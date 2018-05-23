@@ -13,23 +13,14 @@ public class Pracownik extends Osoba implements Serializable {
     @GeneratedValue
     private long id;
 
-    private Adres adres;
     private double stawkaNaGodzine;
 
     public Pracownik(String imie, String nazwisko, String nrTelefonu, Adres adres, double stawkaNaGodzine) {
         this.setImie(imie);
         this.setNazwisko(nazwisko);
         this.setNrTelefonu(nrTelefonu);
-        this.adres = adres;
+        this.setAdres(adres);
         this.stawkaNaGodzine = stawkaNaGodzine;
-    }
-
-    public Adres getAdres() {
-        return adres;
-    }
-
-    public void setAdres(Adres adres) {
-        this.adres = adres;
     }
 
     public double getStawkaNaGodzine() {
@@ -42,6 +33,6 @@ public class Pracownik extends Osoba implements Serializable {
 
     @Override
     public void przedstawSie() {
-        System.out.println("Jestem pracownikiem. Nazywam sie " + this.getImie() + " " + this.getNazwisko() + ". Mój nr telefonu to: " + this.getNrTelefonu());
+        System.out.println("Jestem pracownikiem. Nazywam sie " + this.getImie() + " " + this.getNazwisko() + ". Mój nr telefonu to: " + this.getNrTelefonu() + ". Moja stawka na godzinę wynosi: " + stawkaNaGodzine);
     }
 }

@@ -1,5 +1,7 @@
 package model.osoba;
 
+import model.dataType.Adres;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -14,6 +16,7 @@ public abstract class Osoba implements Serializable {
     private String imie;
     private String nazwisko;
     private String nrTelefonu;
+    private Adres adres;
 
     public void przedstawSie() {
         System.out.println("Jestem osoba. Nazywam sie " + imie + " " + nazwisko + ". Mój nr telefonu to: " + nrTelefonu);
@@ -41,5 +44,13 @@ public abstract class Osoba implements Serializable {
 
     public void setNrTelefonu(String nrTelefonu) {
         this.nrTelefonu = nrTelefonu;
+    }
+
+    public Adres getAdres() {
+        return adres;
+    }
+
+    public void setAdres(Adres adres) {
+        this.adres = adres;
     }
 }

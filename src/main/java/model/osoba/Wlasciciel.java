@@ -14,21 +14,11 @@ public class Wlasciciel extends Osoba implements Serializable {
     @GeneratedValue
     private long id;
 
-    private Adres adres;
-
     public Wlasciciel(String imie, String nazwisko, String nrTelefonu, Adres adres) {
         this.setImie(imie);
         this.setNazwisko(nazwisko);
         this.setNrTelefonu(nrTelefonu);
-        this.adres = adres;
-    }
-
-    public Adres getAdres() {
-        return adres;
-    }
-
-    public void setAdres(Adres adres) {
-        this.adres = adres;
+        this.setAdres(adres);
     }
 
     @Override
